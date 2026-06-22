@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Google Sheet Data Visualization</title>
+</head>
+<body>
+  <div id="login-screen">
+    <div class="login-card">
+    
+      <h1>Welcome Back</h1>
+      <p>Sign in with Google to load the 3D data visualization from Google Sheets.</p>
+      <button id="login-button" type="button">Sign in with Google</button>
+      <p id="login-status">Waiting for Google API...</p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <header id="info">
+      <h2>3D Net Worth Visualization</h2>
+      <p>Google Sheets + Three.js CSS3D</p>
+    </header>
+
+    <main id="container"></main>
+
+    <section id="legend" aria-label="Net worth color legend">
+      <span><i class="red-dot"></i> &lt; $100K</span>
+      <span><i class="orange-dot"></i> $100K - $200K</span>
+      <span><i class="green-dot"></i> &gt; $200K</span>
+    </section>
+
+    <nav id="menu" aria-label="Layout controls">
+      <button id="table" type="button">TABLE</button>
+      <button id="sphere" type="button">SPHERE</button>
+      <button id="helix" type="button">DOUBLE HELIX</button>
+      <button id="grid" type="button">GRID</button>
+    </nav>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
